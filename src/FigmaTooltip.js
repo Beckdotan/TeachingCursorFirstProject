@@ -11,7 +11,7 @@ function IconsActionsCloseSmall() {
       style={{ width: '28px', height: '28px' }}
     >
       <div
-        className="absolute"
+        className="absolute" 
         style={{
           top: '30%',
           left: '30%',

@@ -88,7 +88,7 @@ export default function UploadInterface() {
           </div>
           
           {/* Main title - matches Figma text */}
-          <div className="upload-title">7 days</div>
+          <div className="upload-title">8 days</div>
           
           {/* Subtitle - matches Figma text */}
           <div className="upload-subtitle">Empower Your Potential</div>
