@@ -124,7 +124,7 @@ function BouncingBalls() {
   // Render the component
   return (
     <div className="bouncing-balls-container">
-      <h2>Bouncing Balls Animation</h2>
+      <h2>🏀 Bouncing Balls Animation</h2>
       <p>Watch 3 balls bounce around in a square container!</p>
       
       {/* The canvas element where we draw the animation */}
