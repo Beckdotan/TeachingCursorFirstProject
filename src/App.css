@@ -501,6 +501,230 @@
   border-top: 8px solid #ffffff;
 }
 
+/* Upload Interface Component Styling */
+.upload-interface-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.upload-card {
+  background: #fcfcfd;
+  border-radius: 24px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 2px dashed #d0d1d3;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.upload-card.drag-over {
+  border-color: #ede6ff;
+  background: #fafbff;
+  transform: scale(1.02);
+  box-shadow: 0 12px 40px rgba(237, 230, 255, 0.3);
+}
+
+.upload-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.upload-icon-container {
+  background: #ede6ff;
+  border-radius: 50px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+}
+
+.cloud-icon {
+  color: #8b5cf6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-title {
+  font-family: 'Brown LL', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #161719;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+}
+
+.upload-subtitle {
+  font-family: 'Brown LL', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #161719;
+  line-height: 18px;
+  letter-spacing: -0.25px;
+}
+
+.upload-info-box {
+  background: rgba(237, 230, 255, 0.3);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.upload-info-text {
+  font-family: 'Brown LL', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #7a7c81;
+  line-height: 18px;
+  letter-spacing: -0.25px;
+  margin: 0;
+}
+
+.upload-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.browse-button {
+  background: #2c2d30;
+  color: #e6e7e9;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 20px;
+  font-family: 'Brown LL', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: -0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
+.browse-button:hover {
+  background: #1a1b1e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(44, 45, 48, 0.3);
+}
+
+.upload-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.horizontal-divider {
+  flex: 1;
+  height: 1px;
+}
+
+.divider-line {
+  width: 100%;
+  height: 1px;
+  background: rgba(44, 45, 48, 0.12);
+}
+
+.divider-text {
+  font-family: 'Brown LL', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #7a7c81;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  padding: 0 1rem;
+}
+
+.drag-drop-text {
+  font-family: 'Brown LL', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #161719;
+  line-height: 18px;
+  letter-spacing: -0.25px;
+  text-align: center;
+}
+
+.uploaded-files {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: rgba(16, 185, 129, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.uploaded-files h4 {
+  color: #059669;
+  margin: 0 0 0.5rem 0;
+  font-size: 14px;
+}
+
+.uploaded-files ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.uploaded-files li {
+  color: #065f46;
+  font-size: 12px;
+  margin: 0.25rem 0;
+  padding: 0.25rem 0;
+  border-bottom: 1px solid rgba(16, 185, 129, 0.1);
+}
+
+.uploaded-files li:last-child {
+  border-bottom: none;
+}
+
+.upload-education {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 100%;
+  max-width: 500px;
+}
+
+.upload-education h3 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  text-align: center;
+  color: white;
+}
+
+.upload-education ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.upload-education li {
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  opacity: 0.9;
+  color: white;
+}
+
 /* Responsive design for mobile devices */
 @media (max-width: 768px) {
   .app-header h1 {
@@ -570,5 +794,68 @@
   
   .figma-tooltip-container {
     padding: 1rem;
+  }
+  
+  /* Upload interface mobile */
+  .upload-interface-container {
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+  
+  .upload-card {
+    padding: 1.5rem;
+    margin: 0;
+  }
+  
+  .upload-header {
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .upload-icon-container {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .upload-title {
+    font-size: 16px;
+  }
+  
+  .upload-subtitle {
+    font-size: 13px;
+  }
+  
+  .upload-info-box {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .upload-info-text {
+    font-size: 13px;
+  }
+  
+  .browse-button {
+    padding: 12px 16px;
+    font-size: 13px;
+  }
+  
+  .divider-text {
+    font-size: 14px;
+  }
+  
+  .drag-drop-text {
+    font-size: 13px;
+  }
+  
+  .upload-education {
+    padding: 1rem;
+  }
+  
+  .upload-education h3 {
+    font-size: 1.1rem;
+  }
+  
+  .upload-education li {
+    font-size: 0.9rem;
   }
 }

@@ -6,6 +6,8 @@ import './App.css';
 import BouncingBalls from './BouncingBalls';
 // Import our new Figma tooltip component
 import FigmaTooltip from './FigmaTooltip';
+// Import our new upload interface component (converted from Figma design)
+import UploadInterface from './UploadInterface';
 
 // This is a React component - think of it as a reusable piece of your website
 // Components are like custom HTML elements that you can create
@@ -84,6 +86,8 @@ function App() {
                 <li>✅ Modern CSS styling</li>
                 <li>✅ Tab navigation system</li>
                 <li>✅ Figma design integration</li>
+                <li>✅ File upload interfaces</li>
+                <li>✅ Drag and drop functionality</li>
               </ul>
             </div>
           </>
@@ -106,6 +110,19 @@ function App() {
               This is the tooltip component imported from your Figma design!
             </p>
             <FigmaTooltip />
+          </div>
+        );
+      
+      case 'upload':
+        return (
+          <div className="upload-section">
+            <h2 style={{ color: 'white', marginBottom: '1rem', textAlign: 'center' }}>
+              📁 File Upload Interface
+            </h2>
+            <p style={{ color: 'white', opacity: 0.9, textAlign: 'center', marginBottom: '2rem' }}>
+              This is your new upload component, converted from your Figma design!
+            </p>
+            <UploadInterface />
           </div>
         );
       
@@ -145,6 +162,12 @@ function App() {
             onClick={() => handleTabChange('figma')}
           >
             🎨 Figma Design
+          </button>
+          <button 
+            className={`tab-button ${activeTab === 'upload' ? 'active' : ''}`}
+            onClick={() => handleTabChange('upload')}
+          >
+            📁 Upload Files
           </button>
         </div>
 
