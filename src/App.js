@@ -3,6 +3,7 @@ import './App.css';
 import BallSimulation from './BallSimulation';
 import FluidSimulation from './FluidSimulation';
 import ColorMatchingGame from './ColorMatchingGame';
+import MCPPage from './MCPPage';
 
 function App() {
   const [activeTab, setActiveTab] = useState('balls');
@@ -10,7 +11,8 @@ function App() {
   const tabs = [
     { id: 'balls', label: 'Bouncing Balls', icon: '⚪', component: BallSimulation },
     { id: 'fluid', label: 'Network Visualization', icon: '🕸️', component: FluidSimulation },
-    { id: 'colors', label: 'Color Matching', icon: '🎨', component: ColorMatchingGame }
+    { id: 'colors', label: 'Color Matching', icon: '🎨', component: ColorMatchingGame },
+    { id: 'mcp', label: 'MCP Page', icon: '🎯', component: MCPPage }
   ];
 
   const ActiveComponent = tabs.find(tab => tab.id === activeTab)?.component || BallSimulation;
